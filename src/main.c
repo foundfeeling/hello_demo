@@ -5,10 +5,9 @@
  */
 
 #include <stdio.h>
-
-int main(void)
-{
-	printf("Hello World! %s\n", CONFIG_BOARD_TARGET);
-
-	return 0;
+void main(void){
+	while(1){
+		print("hello word! %s\n", CONFIG_BOARD);
+		k_sleep(K_SECONDS(1));
+	}
 }
